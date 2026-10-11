@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="MZ Woodworks">
+<title>Our Work: Doors, Kitchens, Wardrobes & Media Walls — MZ Woodworks</title>
+<meta name="description" content="Custom doors from PKR 1,500 per sqft, plus kitchens, wardrobes and media walls from PKR 2,500 per sqft. Sketch and 3D view before we build.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Doors, Kitchens, Wardrobes & Media Walls — MZ Woodworks">
+<meta property="og:description" content="Everything is made to measure and priced per square foot, in PKR.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: {
+      colors: {
+        brand: 'oklch(var(--brand) / <alpha-value>)',
+        'brand-deep': 'oklch(var(--brand-deep) / <alpha-value>)',
+        cream: 'oklch(var(--cream) / <alpha-value>)',
+        'cream-2': 'oklch(var(--cream-2) / <alpha-value>)',
+        ink: 'oklch(var(--ink) / <alpha-value>)',
+        panel: 'oklch(var(--panel) / <alpha-value>)',
+        'story-foreground': 'oklch(var(--story-foreground) / <alpha-value>)',
+        'story-surface': 'oklch(var(--story-surface) / <alpha-value>)',
+        background: 'oklch(var(--cream) / <alpha-value>)',
+        foreground: 'oklch(var(--ink) / <alpha-value>)',
+        border: 'oklch(0.218 0.025 55 / 10%)',
+      },
+      fontFamily: { display: ['Fraunces', 'Georgia', 'serif'] },
+    } },
+  };
+</script>
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="shop" class="grain min-h-screen">
+
+<header class="sticky top-0 z-30 border-b border-border bg-cream/90 backdrop-blur-md">
+  <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8">
+    <a href="index.html" class="flex items-center gap-2">
+      <img src="assets/mz-logo-sm.png" alt="MZ Woodworks logo" width="40" height="40" class="size-10 object-contain">
+      <span class="text-[15px] font-semibold text-ink">MZ Woodworks</span>
+    </a>
+    <nav class="flex items-center gap-1">
+      <a href="services.html" data-nav="services" class="hidden rounded-full px-3 py-2 text-sm text-ink/70 transition-colors hover:text-ink sm:inline-block">Services</a>
+      <a href="shop.html" data-nav="shop" class="hidden rounded-full px-3 py-2 text-sm text-ink/70 transition-colors hover:text-ink sm:inline-block">Our Work</a>
+      <a href="gallery.html" data-nav="gallery" class="hidden rounded-full px-3 py-2 text-sm text-ink/70 transition-colors hover:text-ink sm:inline-block">Gallery</a>
+      <a href="projects.html" data-nav="projects" class="hidden rounded-full px-3 py-2 text-sm text-ink/70 transition-colors hover:text-ink sm:inline-block">Projects &amp; Reviews</a>
+      <a href="custom.html" data-nav="custom" class="hidden rounded-full px-3 py-2 text-sm text-ink/70 transition-colors hover:text-ink sm:inline-block">Custom</a>
+      <a href="process.html" data-nav="process" class="hidden rounded-full px-3 py-2 text-sm text-ink/70 transition-colors hover:text-ink sm:inline-block">Process</a>
+      <a href="contact.html" class="bg-brand px-4 py-2 text-sm font-medium text-cream ring-1 ring-brand/30 transition-transform hover:-translate-y-0.5">Get a quote</a>
+    </nav>
+  </div>
+  <nav aria-label="Mobile pages" class="flex h-10 items-center justify-center gap-4 border-t border-border px-3 text-xs font-medium text-brand sm:hidden">
+    <a href="services.html" data-nav="services" data-mobile class="transition-colors hover:text-ink">Services</a>
+    <a href="shop.html" data-nav="shop" data-mobile class="transition-colors hover:text-ink">Our Work</a>
+    <a href="gallery.html" data-nav="gallery" data-mobile class="transition-colors hover:text-ink">Gallery</a>
+    <a href="projects.html" data-nav="projects" data-mobile class="transition-colors hover:text-ink">Projects &amp; Reviews</a>
+    <a href="custom.html" data-nav="custom" data-mobile class="transition-colors hover:text-ink">Custom</a>
+    <a href="process.html" data-nav="process" data-mobile class="transition-colors hover:text-ink">Process</a>
+  </nav>
+</header>
+
+<main>
+  <div class="mx-auto max-w-3xl px-4 py-9">
+    <div class="reveal">
+      <p class="text-[11px] font-medium uppercase tracking-[0.16em] text-brand">What we make</p>
+      <h1 class="mt-1 max-w-[22ch] text-balance text-3xl text-ink">Doors, kitchens, wardrobes &amp; media walls</h1>
+      <p class="mt-2 text-sm text-ink/65">
+        Everything is made to measure in our own workshop and priced per square foot.
+        Doors PKR 1,500/sqft · Classic from PKR 2,500/sqft.
+      </p>
+      <p class="mt-2 text-xs text-ink/50">Images design inspiration ke liye hain; final work aap ki space ke mutabiq hota hai.</p>
+    </div>
+    <div class="mt-6 grid grid-cols-2 gap-3" id="product-cards"></div>
+  </div>
+
+  <section class="border-t border-border bg-cream-2/50">
+    <div class="mx-auto max-w-3xl px-4 py-9">
+      <p class="text-[11px] font-medium uppercase tracking-[0.16em] text-brand">Special offers</p>
+      <h2 class="mt-1 text-balance text-2xl text-ink">Aap ke projects, behtar rates</h2>
+      <div class="mt-5 grid gap-5 sm:grid-cols-3" id="offers-grid"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t border-border">
+  <div class="mx-auto max-w-6xl px-5 py-8 sm:px-8">
+    <nav class="flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-ink/70">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="shop.html">Our work</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="projects.html">Projects &amp; reviews</a>
+      <a href="custom.html">Custom work</a>
+      <a href="process.html">Process</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="mt-5 text-center text-xs text-ink/45" id="footer-line"></p>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+<script>
+  document.getElementById("footer-line").textContent = `MZ Woodworks · ${CONTACT.city} · Prices in PKR`;
+
+  const cardsWrap = document.getElementById("product-cards");
+  products.forEach((p) => {
+    const a = document.createElement("a");
+    a.href = `shop-${p.slug}.html`;
+    a.className = "reveal group relative block aspect-[3/4] overflow-hidden rounded-md bg-brand-deep text-story-foreground ring-1 ring-border";
+    a.innerHTML = `
+      <div class="absolute inset-0 overflow-hidden">
+        <img src="${p.image}" alt="${p.name}" width="1024" height="1024" loading="lazy" class="size-full object-cover transition-transform duration-700 group-hover:scale-105">
+      </div>
+      <div class="story-shade absolute inset-0"></div>
+      <span class="absolute left-3 top-3 bg-story-foreground px-2 py-1 text-[10px] font-semibold text-brand-deep sm:left-4 sm:top-4">From ${formatPKR(p.rate)}/sqft</span>
+      <div class="absolute inset-x-0 bottom-0 flex items-end justify-between gap-2 p-4 sm:p-5">
+        <div>
+          <p class="font-display text-xl sm:text-2xl">${p.name}</p>
+          <p class="mt-1 text-xs text-story-foreground/80">Design inspiration · Made to measure</p>
+        </div>
+        <span aria-hidden="true" class="text-xl transition-transform group-hover:translate-x-1">↗</span>
+      </div>`;
+    cardsWrap.appendChild(a);
+  });
+
+  const offersWrap = document.getElementById("offers-grid");
+  offersWrap.innerHTML = `
+    <div class="border-l-2 border-brand pl-4"><p class="font-display text-xl text-brand">Trade rates</p><p class="mt-1 text-sm leading-relaxed text-ink/70">${offers.trade}</p></div>
+    <div class="border-l-2 border-brand pl-4"><p class="font-display text-xl text-brand">11th project · 1% off</p><p class="mt-1 text-sm leading-relaxed text-ink/70">${offers.loyalty10}</p></div>
+    <div class="border-l-2 border-brand pl-4"><p class="font-display text-xl text-brand">21st project · 2% off</p><p class="mt-1 text-sm leading-relaxed text-ink/70">${offers.loyalty20}</p></div>`;
+</script>
+</body>
+</html>
