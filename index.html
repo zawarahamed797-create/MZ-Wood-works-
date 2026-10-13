@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="MZ Woodworks">
+<title>MZ Woodworks — Custom Doors, Kitchens, Wardrobes & Media Walls</title>
+<meta name="description" content="Custom doors from 1,500 PKR per sqft, plus kitchens, wardrobes and media walls from 2,500 PKR per sqft. Sketch and 3D view before we build.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MZ Woodworks — Wood that lasts">
+<meta property="og:description" content="Custom doors, kitchens, wardrobes and media walls with a 3D preview before a single cut.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: {
+      colors: {
+        brand: 'oklch(var(--brand) / <alpha-value>)',
+        'brand-deep': 'oklch(var(--brand-deep) / <alpha-value>)',
+        cream: 'oklch(var(--cream) / <alpha-value>)',
+        'cream-2': 'oklch(var(--cream-2) / <alpha-value>)',
+        ink: 'oklch(var(--ink) / <alpha-value>)',
+        panel: 'oklch(var(--panel) / <alpha-value>)',
+        'story-foreground': 'oklch(var(--story-foreground) / <alpha-value>)',
+        'story-surface': 'oklch(var(--story-surface) / <alpha-value>)',
+        background: 'oklch(var(--cream) / <alpha-value>)',
+        foreground: 'oklch(var(--ink) / <alpha-value>)',
+        border: 'oklch(0.218 0.025 55 / 10%)',
+      },
+      fontFamily: { display: ['Fraunces', 'Georgia', 'serif'] },
+    } },
+  };
+</script>
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="home" class="grain min-h-screen">
+
+<header class="sticky top-0 z-30 border-b border-border bg-cream/90 backdrop-blur-md">
+  <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8">
+    <a href="index.html" class="flex items-center gap-2">
+      <img src="assets/mz-logo-sm.png" alt="MZ Woodworks logo" width="40" height="40" class="size-10 object-contain">
+      <span class="text-[15px] font-semibold text-ink">MZ Woodworks</span>
+    </a>
+    <nav class="flex items-center gap-1">
+      <a href="services.html" data-nav="services" class="hidden rounded-full px-3 py-2 text-sm text-ink/70 transition-colors hover:text-ink sm:inline-block">Services</a>
+      <a href="shop.html" data-nav="shop" class="hidden rounded-full px-3 py-2 text-sm text-ink/70 transition-colors hover:text-ink sm:inline-block">Our Work</a>
+      <a href="gallery.html" data-nav="gallery" class="hidden rounded-full px-3 py-2 text-sm text-ink/70 transition-colors hover:text-ink sm:inline-block">Gallery</a>
+      <a href="projects.html" data-nav="projects" class="hidden rounded-full px-3 py-2 text-sm text-ink/70 transition-colors hover:text-ink sm:inline-block">Projects &amp; Reviews</a>
+      <a href="custom.html" data-nav="custom" class="hidden rounded-full px-3 py-2 text-sm text-ink/70 transition-colors hover:text-ink sm:inline-block">Custom</a>
+      <a href="process.html" data-nav="process" class="hidden rounded-full px-3 py-2 text-sm text-ink/70 transition-colors hover:text-ink sm:inline-block">Process</a>
+      <a href="contact.html" class="bg-brand px-4 py-2 text-sm font-medium text-cream ring-1 ring-brand/30 transition-transform hover:-translate-y-0.5">Get a quote</a>
+    </nav>
+  </div>
+  <nav aria-label="Mobile pages" class="flex h-10 items-center justify-center gap-4 border-t border-border px-3 text-xs font-medium text-brand sm:hidden">
+    <a href="services.html" data-nav="services" data-mobile class="transition-colors hover:text-ink">Services</a>
+    <a href="shop.html" data-nav="shop" data-mobile class="transition-colors hover:text-ink">Our Work</a>
+    <a href="gallery.html" data-nav="gallery" data-mobile class="transition-colors hover:text-ink">Gallery</a>
+    <a href="projects.html" data-nav="projects" data-mobile class="transition-colors hover:text-ink">Projects &amp; Reviews</a>
+    <a href="custom.html" data-nav="custom" data-mobile class="transition-colors hover:text-ink">Custom</a>
+    <a href="process.html" data-nav="process" data-mobile class="transition-colors hover:text-ink">Process</a>
+  </nav>
+</header>
+
+<main>
+  <!-- ---------------- STORY SHOWCASE ---------------- -->
+  <section id="story" class="story-stage relative isolate overflow-hidden bg-brand-deep text-story-foreground" aria-label="MZ Woodworks design showcase">
+    <img class="story-image absolute inset-0 -z-20 size-full object-cover is-active" data-story="0" src="assets/gallery-kitchens-01.jpg" alt="Kitchens design inspiration" width="1024" height="1280" fetchpriority="high">
+    <img class="story-image absolute inset-0 -z-20 size-full object-cover" data-story="1" src="assets/gallery-wardrobes-01.jpg" alt="" aria-hidden="true" width="1024" height="1280">
+    <img class="story-image absolute inset-0 -z-20 size-full object-cover" data-story="2" src="assets/gallery-media-walls-01.jpg" alt="" aria-hidden="true" width="1024" height="1280">
+    <img class="story-image absolute inset-0 -z-20 size-full object-cover" data-story="3" src="assets/gallery-doors-01.jpg" alt="" aria-hidden="true" width="1024" height="1280">
+    <div class="story-shade absolute inset-0 -z-10"></div>
+
+    <div class="mx-auto flex h-full w-full max-w-6xl flex-col justify-between px-5 py-5 sm:px-8 sm:py-7 lg:px-10">
+      <div class="flex items-center gap-2" id="story-dots" aria-label="Showcase 1 of 4"></div>
+
+      <div class="grid items-end gap-8 pb-2 md:grid-cols-[minmax(0,1fr)_auto]">
+        <div class="max-w-2xl" id="story-caption-wrap">
+          <p class="story-caption mb-3 inline-flex items-center gap-2 border border-story-foreground/40 bg-story-surface/20 px-3 py-1.5 text-xs font-semibold uppercase backdrop-blur-md">
+            <span class="size-1.5 rounded-full bg-story-foreground"></span> Mandi Bahauddin · Design inspiration
+          </p>
+          <h1 class="story-caption text-balance text-5xl leading-[1.04] sm:text-6xl lg:text-7xl">
+            MZ Woodworks<span class="block font-display italic" id="story-title-suffix">Kitchens, made for you.</span>
+          </h1>
+          <p class="story-caption mt-4 max-w-lg text-sm leading-relaxed text-story-foreground/90 sm:text-base">
+            Doors PKR 1,500/sqft se. Kitchens, wardrobes aur media walls PKR 2,500/sqft se. Pehle sketch aur 3D view; aap ki approval aur advance ke baad kaam shuru.
+          </p>
+          <div class="story-caption mt-5 flex flex-wrap items-center gap-3">
+            <a href="shop.html" class="inline-flex min-h-11 items-center gap-2 bg-story-foreground px-5 py-2.5 text-sm font-semibold text-brand-deep transition-transform hover:-translate-y-1">
+              Kaam dekhein
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="process.html" class="inline-flex min-h-11 items-center border border-story-foreground/60 bg-story-surface/20 px-5 py-2.5 text-sm font-semibold text-story-foreground backdrop-blur-md transition-colors hover:bg-story-surface/40">
+              Hamara tareeqa
+            </a>
+          </div>
+        </div>
+        <div class="flex items-center justify-between gap-5 md:flex-col md:items-end">
+          <a href="shop-kitchens.html" id="story-product-link" class="text-sm font-semibold underline decoration-story-foreground/70 underline-offset-4 hover:decoration-story-foreground">Kitchens · PKR 2,500/sqft</a>
+          <div class="flex gap-2">
+            <button type="button" id="story-prev" aria-label="Previous design" class="size-10 rounded-full border border-story-foreground/60 bg-story-surface/20 text-story-foreground hover:bg-story-surface/40 grid place-items-center">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button type="button" id="story-next" aria-label="Next design" class="size-10 rounded-full border border-story-foreground/60 bg-story-surface/20 text-story-foreground hover:bg-story-surface/40 grid place-items-center">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="border-b border-border bg-panel/70">
+    <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-4 gap-y-1 px-5 py-3 text-center text-xs font-semibold uppercase text-brand sm:gap-x-10">
+      <span>01 · Sketch</span><span>02 · 3D view</span><span>03 · Aap ka approval</span><span>04 · Build &amp; install</span>
+    </div>
+  </div>
+
+  <!-- ---------------- WHAT WE MAKE ---------------- -->
+  <section class="border-b border-border bg-cream-2/50">
+    <div class="mx-auto max-w-6xl px-5 py-14 sm:px-8 sm:py-20">
+      <div class="reveal">
+        <p class="text-[11px] font-medium uppercase tracking-[0.16em] text-brand">What we make</p>
+        <h2 class="mt-2 max-w-[22ch] text-balance text-3xl text-ink sm:text-5xl">Aap ke ghar ke liye, aap ki marzi se.</h2>
+      </div>
+      <div class="mt-8 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-5" id="product-cards"></div>
+    </div>
+  </section>
+
+  <!-- ---------------- CUSTOM WORK ---------------- -->
+  <section class="border-b border-border">
+    <div class="mx-auto max-w-6xl px-5 py-14 sm:px-8 sm:py-20">
+      <div class="reveal">
+        <p class="text-[11px] font-medium uppercase tracking-[0.16em] text-brand">Custom work</p>
+        <h2 class="mt-2 max-w-[26ch] text-balance text-3xl text-ink sm:text-5xl">Kitchens, wardrobes &amp; media walls — priced per square foot</h2>
+      </div>
+      <div class="mt-5" id="tier-cards"></div>
+      <div class="mt-5 grid grid-cols-3 gap-2">
+        <img src="assets/gallery-kitchens-02.jpg" alt="Kitchens design example" width="1024" height="1280" loading="lazy" class="aspect-[3/4] w-full rounded-md object-cover">
+        <img src="assets/gallery-wardrobes-02.jpg" alt="Wardrobes design example" width="1024" height="1280" loading="lazy" class="aspect-[3/4] w-full rounded-md object-cover">
+        <img src="assets/gallery-media-walls-02.jpg" alt="Media Walls design example" width="1024" height="1280" loading="lazy" class="aspect-[3/4] w-full rounded-md object-cover">
+      </div>
+      <a href="custom.html" class="reveal mt-4 flex w-full items-center justify-center rounded-full bg-panel/60 px-5 py-3 text-sm font-medium text-ink ring-1 ring-border backdrop-blur-sm">
+        See what each edition includes
+      </a>
+    </div>
+  </section>
+
+  <!-- ---------------- HOW WE BUILD ---------------- -->
+  <section class="bg-cream-2/50">
+    <div class="mx-auto max-w-6xl px-5 py-14 sm:px-8 sm:py-20">
+      <div class="reveal">
+        <p class="text-[11px] font-medium uppercase tracking-[0.16em] text-brand">How we build</p>
+        <h2 class="mt-2 max-w-[24ch] text-balance text-3xl text-ink sm:text-5xl">Sketch to 3D before a single cut</h2>
+      </div>
+      <ol class="mt-5 space-y-3" id="steps-list"></ol>
+      <div class="mt-6 grid grid-cols-2 gap-2">
+        <img src="assets/process-sketch.jpg" alt="Measured kitchen sketch before production" width="1024" height="768" loading="lazy" class="aspect-[4/3] w-full rounded-lg object-cover">
+        <img src="assets/process-3d.jpg" alt="Kitchen 3D view before production" width="1024" height="768" loading="lazy" class="aspect-[4/3] w-full rounded-lg object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------- BUILD REVEAL (before/after) ---------------- -->
+  <div id="build-reveal-root"></div>
+
+  <!-- ---------------- COMPLETED PROJECTS ---------------- -->
+  <section class="border-t border-border bg-panel/60">
+    <div class="mx-auto max-w-6xl px-5 py-14 sm:px-8 sm:py-20">
+      <div class="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+        <div class="reveal">
+          <p class="text-xs font-semibold uppercase text-brand">Mukammal projects</p>
+          <h2 class="mt-2 max-w-xl text-balance text-3xl text-ink sm:text-5xl">Hamare kuch numaya kaam.</h2>
+          <p class="mt-3 max-w-xl text-sm leading-relaxed text-ink/70">Hospitals aur labs ke ilawa bhi hum ne bohat se projects par kaam kiya hai.</p>
+        </div>
+        <a href="projects.html" class="inline-flex min-h-11 items-center gap-2 self-start border-b border-brand pb-1 text-sm font-semibold text-brand transition-colors hover:text-ink">
+          Sab projects aur reviews dekhein
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
+      </div>
+      <div class="mt-8 grid gap-px overflow-hidden border border-border bg-border sm:grid-cols-2 lg:grid-cols-3" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- ---------------- WHY US ---------------- -->
+  <section class="border-b border-border">
+    <div class="mx-auto max-w-3xl px-4 py-9">
+      <div class="reveal">
+        <p class="text-[11px] font-medium uppercase tracking-[0.16em] text-brand">Why choose us</p>
+        <h2 class="mt-1 max-w-[30ch] text-balance text-2xl text-ink">Doosre carpenters se hum alag kyun hain?</h2>
+        <p class="mt-2 text-sm text-ink/70">Hum jhoot nahi bolte, kuch nahi chhupate aur jo bolte hain wohi karte hain — neeche har point dekh lein.</p>
+      </div>
+      <ul class="mt-5 grid gap-3 sm:grid-cols-2" id="whyus-list"></ul>
+    </div>
+  </section>
+
+  <!-- ---------------- OFFERS ---------------- -->
+  <section class="border-t border-border bg-cream-2/50">
+    <div class="mx-auto max-w-3xl px-4 py-9">
+      <p class="text-[11px] font-medium uppercase tracking-[0.16em] text-brand">Special offers</p>
+      <h2 class="mt-1 text-balance text-2xl text-ink">Aap ke projects, behtar rates</h2>
+      <div class="mt-5 grid gap-5 sm:grid-cols-3" id="offers-grid"></div>
+      <a href="contact.html" class="mt-6 inline-flex items-center border-b border-brand pb-1 text-sm font-medium text-brand">Discuss your project →</a>
+    </div>
+  </section>
+
+  <!-- ---------------- FINAL CTA ---------------- -->
+  <section class="bg-brand-deep text-story-foreground">
+    <div class="mx-auto flex max-w-6xl flex-col items-start justify-between gap-7 px-5 py-14 sm:px-8 md:flex-row md:items-center md:py-20">
+      <div>
+        <p class="text-xs font-semibold uppercase text-story-foreground/70">Aap ka project, hamara kaam</p>
+        <h2 class="mt-3 max-w-xl text-balance text-3xl italic sm:text-5xl">Kuch khaas banwana chahte hain?</h2>
+        <p class="mt-3 text-sm text-story-foreground/80">Mandi Bahauddin, Pakistan · Pehle sketch aur 3D view, phir aap ki approval.</p>
+      </div>
+      <a id="final-cta-whatsapp" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex min-h-12 items-center gap-3 bg-story-foreground px-6 py-3 text-sm font-semibold text-brand-deep transition-transform hover:-translate-y-1">
+        WhatsApp par rabta karein
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t border-border">
+  <div class="mx-auto max-w-6xl px-5 py-8 sm:px-8">
+    <nav class="flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-ink/70">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="shop.html">Our work</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="projects.html">Projects &amp; reviews</a>
+      <a href="custom.html">Custom work</a>
+      <a href="process.html">Process</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="mt-5 text-center text-xs text-ink/45" id="footer-line"></p>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+<script>
+  document.getElementById("footer-line").textContent = `MZ Woodworks · ${CONTACT.city} · Prices in PKR`;
+  document.getElementById("final-cta-whatsapp").href = whatsappLink("Assalam o alaikum, mujhe apne woodwork project ke bare mein baat karni hai.");
+
+  // ---- Product cards (What we make) ----
+  const cardsWrap = document.getElementById("product-cards");
+  products.forEach((p) => {
+    const a = document.createElement("a");
+    a.href = `shop-${p.slug}.html`;
+    a.className = "reveal group relative block aspect-[3/4] overflow-hidden rounded-md bg-brand-deep text-story-foreground ring-1 ring-border";
+    a.innerHTML = `
+      <div class="absolute inset-0 overflow-hidden">
+        <img src="${p.image}" alt="${p.name}" width="1024" height="1024" loading="lazy" class="size-full object-cover transition-transform duration-700 group-hover:scale-105">
+      </div>
+      <div class="story-shade absolute inset-0"></div>
+      <span class="absolute left-3 top-3 bg-story-foreground px-2 py-1 text-[10px] font-semibold text-brand-deep sm:left-4 sm:top-4">From ${formatPKR(p.rate)}/sqft</span>
+      <div class="absolute inset-x-0 bottom-0 flex items-end justify-between gap-2 p-4 sm:p-5">
+        <div>
+          <p class="font-display text-xl sm:text-2xl">${p.name}</p>
+          <p class="mt-1 text-xs text-story-foreground/80">Design inspiration · Made to measure</p>
+        </div>
+        <span aria-hidden="true" class="text-xl transition-transform group-hover:translate-x-1">↗</span>
+      </div>`;
+    cardsWrap.appendChild(a);
+  });
+
+  // ---- Tier cards ----
+  const tierWrap = document.getElementById("tier-cards");
+  tierWrap.className = "space-y-3";
+  tiers.forEach((tier) => {
+    const featured = tier.id === "royal";
+    const div = document.createElement("div");
+    div.className = featured
+      ? "reveal rounded-2xl bg-brand/10 p-4 ring-1 ring-brand/20 backdrop-blur-sm"
+      : "reveal rounded-2xl bg-panel/50 p-4 ring-1 ring-border backdrop-blur-sm";
+    div.innerHTML = `
+      <div class="flex items-baseline justify-between">
+        <div class="flex items-center gap-2">
+          <p class="${featured ? "font-display text-lg text-brand-deep" : "font-display text-lg text-ink"}">${tier.name}</p>
+          ${featured ? '<span class="rounded-full bg-brand px-2 py-0.5 text-[10px] font-medium text-cream">Most loved</span>' : ""}
+        </div>
+        <p class="text-right">
+          <span class="${featured ? "font-display text-2xl font-semibold text-brand-deep" : "font-display text-2xl font-semibold text-brand"}">${tier.rate.toLocaleString("en-PK")}</span>
+          <span class="text-[11px] text-ink/50"> PKR / sqft</span>
+        </p>
+      </div>
+      <p class="${featured ? "mt-1 text-sm text-ink/70" : "mt-1 text-sm text-ink/65"}">${tier.detail}</p>
+      <ul class="${featured ? "mt-3 space-y-1 text-sm text-ink/70" : "mt-3 space-y-1 text-sm text-ink/65"}">
+        ${tier.specs.map((s) => `<li class="flex items-start gap-2"><span class="mt-[7px] size-1 shrink-0 rounded-full bg-brand/70"></span>${s}</li>`).join("")}
+      </ul>`;
+    tierWrap.appendChild(div);
+  });
+
+  // ---- Steps ----
+  const stepsWrap = document.getElementById("steps-list");
+  steps.forEach((s) => {
+    const li = document.createElement("li");
+    li.className = "reveal flex items-start gap-3";
+  li.innerHTML = `
+      <span class="grid size-8 shrink-0 place-items-center rounded-full bg-brand font-display text-cream">${s.no}</span>
+      <p class="text-sm text-ink/75"><span class="font-medium text-ink">${s.title}</span> ${s.text}</p>`;
+    stepsWrap.appendChild(li);
+  });
+
+  // ---- Completed projects ----
+  const projWrap = document.getElementById("projects-grid");
+  completedProjects.forEach((project, index) => {
+    const div = document.createElement("div");
+    div.className = "reveal min-w-0 bg-background p-5 sm:p-6";
+    div.innerHTML = `
+      <span class="text-xs font-semibold text-brand">${String(index + 1).padStart(2, "0")} / ${project.category}</span>
+      <h3 class="mt-5 text-xl text-ink sm:text-2xl">${project.name}</h3>`;
+    projWrap.appendChild(div);
+  });
+
+  // ---- Why us ----
+  const whyWrap = document.getElementById("whyus-list");
+  whyUs.forEach((point) => {
+    const li = document.createElement("li");
+    li.className = "reveal rounded-2xl bg-panel/55 p-4 ring-1 ring-border backdrop-blur-sm";
+    li.innerHTML = `
+      <h3 class="font-display text-base text-ink">${point.title}</h3>
+      <p class="mt-1.5 text-sm leading-relaxed text-ink/70">${point.text}</p>`;
+    whyWrap.appendChild(li);
+  });
+
+  // ---- Offers ----
+  const offersWrap = document.getElementById("offers-grid");
+  offersWrap.innerHTML = `
+    <div class="border-l-2 border-brand pl-4"><p class="font-display text-xl text-brand">Trade rates</p><p class="mt-1 text-sm leading-relaxed text-ink/70">${offers.trade}</p></div>
+    <div class="border-l-2 border-brand pl-4"><p class="font-display text-xl text-brand">11th project · 1% off</p><p class="mt-1 text-sm leading-relaxed text-ink/70">${offers.loyalty10}</p></div>
+    <div class="border-l-2 border-brand pl-4"><p class="font-display text-xl text-brand">21st project · 2% off</p><p class="mt-1 text-sm leading-relaxed text-ink/70">${offers.loyalty20}</p></div>`;
+
+  // ---- Build reveal (before/after slider) ----
+  (function () {
+    const root = document.getElementById("build-reveal-root");
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    buildReveals.forEach((scene, index) => {
+      const section = document.createElement("section");
+      section.className = `border-b border-border ${index % 2 ? "bg-cream-2/50" : "bg-background"}`;
+      section.setAttribute("aria-labelledby", `build-${scene.slug}`);
+      section.innerHTML = `
+        <div class="mx-auto grid max-w-6xl gap-7 px-5 py-14 sm:px-8 md:grid-cols-[minmax(0,0.72fr)_minmax(0,1.28fr)] md:gap-12 md:py-20">
+          <div class="md:sticky md:top-28 md:self-start md:pt-10">
+            <p class="text-xs font-semibold uppercase text-brand">0${index + 1} / Design se finish tak</p>
+            <h2 id="build-${scene.slug}" class="mt-3 text-4xl text-ink sm:text-5xl">${scene.name} ka safar.</h2>
+            <p class="mt-4 max-w-sm text-sm leading-relaxed text-ink/70">Pehle structure, phir aap ki pasand ki finishing — scroll karein ya neeche slider se khud slide kar ke dekhein.</p>
+            <p class="mt-5 text-sm font-semibold text-brand">${formatPKR(scene.rate)}/sqft se</p>
+            <a href="shop-${scene.slug}.html" class="mt-5 inline-flex items-center gap-2 border-b border-brand pb-1 text-sm font-semibold text-brand hover:text-ink">
+              ${scene.name} designs dekhein
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+          <div class="min-w-0">
+            <div class="build-visual relative aspect-square w-full overflow-hidden bg-cream-2" role="img" aria-label="${scene.name} design illustration: unfinished cabinetry becoming a finished design as you scroll">
+              <img src="${scene.before}" alt="" loading="lazy" width="768" height="768" class="absolute inset-0 size-full object-cover">
+              <img src="${scene.after}" alt="" loading="lazy" width="768" height="768" class="build-complete absolute inset-0 size-full object-cover">
+              <span aria-hidden="true" class="pointer-events-none absolute inset-y-0 w-0.5 bg-story-foreground shadow-lg build-divider"></span>
+              <input type="range" min="0" max="100" value="0" aria-label="${scene.name}: unfinished se finished slide karein" class="build-slider absolute inset-x-4 bottom-12 z-10 h-6 cursor-ew-resize accent-brand">
+              <span class="absolute bottom-3 left-3 bg-story-surface/75 px-2 py-1 text-xs font-medium text-story-foreground backdrop-blur-sm">Unfinished</span>
+              <span class="absolute bottom-3 right-3 bg-story-surface/75 px-2 py-1 text-xs font-medium text-story-foreground backdrop-blur-sm">Finished</span>
+            </div>
+            <p class="mt-2 text-xs text-ink/55">Design illustration — asli project ki before/after photo nahi.</p>
+          </div>
+        </div>`;
+      root.appendChild(section);
+
+      const visual = section.querySelector(".build-visual");
+      const slider = section.querySelector(".build-slider");
+      const divider = section.querySelector(".build-divider");
+      let manual = false;
+
+      function setReveal(pct) {
+        visual.style.setProperty("--build-reveal", `${pct}%`);
+        divider.style.right = `${pct}%`;
+        slider.value = pct;
+      }
+
+      slider.addEventListener("input", (e) => {
+        manual = true;
+        setReveal(Number(e.target.value));
+      });
+
+      if (reducedMotion) {
+        setReveal(100);
+      } else {
+        let frame = 0;
+        function update() {
+          frame = 0;
+          if (manual) return;
+          const rect = visual.getBoundingClientRect();
+          const vh = window.innerHeight;
+          const mid = rect.top + rect.height / 2;
+          const progress = Math.min(1, Math.max(0, (vh - mid) / (vh * 0.6)));
+          setReveal((progress * 100).toFixed(2));
+        }
+        function schedule() { if (!frame) frame = window.requestAnimationFrame(update); }
+        schedule();
+        window.addEventListener("scroll", schedule, { passive: true });
+        window.addEventListener("resize", schedule);
+      }
+    });
+  })();
+
+  // ---- Story showcase carousel ----
+  (function () {
+    const storySlugs = ["kitchens", "wardrobes", "media-walls", "doors"];
+    const stories = storySlugs.map((slug) => products.find((p) => p.slug === slug));
+    let active = 0;
+    let paused = false;
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    const dotsWrap = document.getElementById("story-dots");
+    stories.forEach((story, index) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.setAttribute("aria-label", `Show ${story.name}`);
+      btn.className = "group h-6 min-w-0 flex-1 rounded-none p-0 hover:bg-transparent";
+      btn.innerHTML = `<span class="h-1 w-full overflow-hidden rounded-full bg-story-foreground/35 block"><span class="story-fill block h-full w-full origin-left"></span></span>`;
+      btn.addEventListener("click", () => setActive(index));
+      dotsWrap.appendChild(btn);
+    });
+
+    const images = document.querySelectorAll(".story-image");
+    const titleSuffix = document.getElementById("story-title-suffix");
+    const productLink = document.getElementById("story-product-link");
+    const captionWrap = document.getElementById("story-caption-wrap");
+
+    function render() {
+      images.forEach((img) => {
+        const idx = Number(img.dataset.story);
+        img.classList.toggle("is-active", idx === active);
+        img.setAttribute("aria-hidden", idx === active ? "false" : "true");
+      });
+      const current = stories[active];
+      titleSuffix.textContent = `${current.name}, made for you.`;
+      productLink.textContent = `${current.name} · ${formatPKR(current.rate)}/sqft`;
+      productLink.href = `shop-${current.slug}.html`;
+      captionWrap.querySelectorAll(".story-caption").forEach((el) => {
+        el.style.animation = "none";
+        void el.offsetWidth;
+        el.style.animation = "";
+      });
+
+      dotsWrap.querySelectorAll("button").forEach((btn, index) => {
+        const fill = btn.querySelector(".story-fill");
+        fill.className = "story-fill block h-full origin-left";
+        fill.style.animation = "";
+        fill.style.background = "";
+        fill.style.transform = "";
+        if (index < active) {
+          fill.style.background = "oklch(var(--story-foreground))";
+          fill.style.transform = "scaleX(1)";
+        } else if (index === active) {
+          fill.style.background = "oklch(var(--story-foreground))";
+          fill.classList.add("story-progress");
+          if (paused || reducedMotion) fill.classList.add("is-paused");
+        } else {
+          fill.style.transform = "scaleX(0)";
+        }
+      });
+    }
+
+    function setActive(index) {
+      active = ((index % stories.length) + stories.length) % stories.length;
+      render();
+    }
+
+    document.getElementById("story-prev").addEventListener("click", () => setActive(active - 1));
+    document.getElementById("story-next").addEventListener("click", () => setActive(active + 1));
+
+    const section = document.getElementById("story");
+    section.addEventListener("mouseenter", () => { paused = true; render(); });
+    section.addEventListener("mouseleave", () => { paused = false; render(); });
+
+    if (!reducedMotion) {
+      setInterval(() => { if (!paused) setActive(active + 1); }, 6000);
+    }
+
+    render();
+  })();
+</script>
+</body>
+</html>
